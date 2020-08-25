@@ -124,11 +124,11 @@ namespace FCS_HydroponicHarvesters.Mono
                 return true;
             }
 
-            if (HydroHarvContainer.HasItems())
-            {
-                reason = HydroponicHarvestersBuildable.HasItemsMessage();
-                return false;
-            }
+#            if (HydroHarvContainer.HasItems())
+#            {
+#                reason = HydroponicHarvestersBuildable.HasItemsMessage();
+#                return false;
+#            }
 
             reason = string.Empty;
             return true;
